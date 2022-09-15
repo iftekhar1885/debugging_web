@@ -204,6 +204,9 @@ button {
     flex-direction: column;
   }
 }
+
+
+
 @media only screen and (min-width: 700px) {
 
   #histories {
@@ -211,7 +214,7 @@ button {
   }
 
   .card {
-    width: 32%;
+    width: 30%;
     flex-direction: column;
   }
 
