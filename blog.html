@@ -70,15 +70,20 @@
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>
+                        <p><b>Global Scope :</b> Variables declared Globally (outside any function) have Global Scope.
+
+                            Global variables can be accessed from anywhere in a JavaScript program.
+                            
+                            Variables declared with var, let and const are quite similar when declared outside a block.</p>
                             
      <br>
-                            Regular functions created using function declarations or expressions are constructible and
-                            callable. Since regular functions are constructible, they can be called using the new
-                            keyword.
-    <br>
-                            However, the arrow functions are only callable and not constructible. Thus, we will get a
-                            run-time error when constructing a non-constructible arrow function using the new keyword.
+                            <p><b>Block Scope :</b>Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+
+                                ES6 introduced two important new JavaScript keywords: let and const.
+                                
+                                These two keywords provide Block Scope in JavaScript.
+                                
+                                Variables declared inside a { } block cannot be accessed from outside the block:</p>
                         </p>
                     </div>
                 </div>
@@ -87,20 +92,20 @@
                 <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Map(), ForEach(), Filter(), Find()
+                        How does the Event Loop works in JavaScript?
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p>
-                            <b>map()</b> calls a function once for each element in an array.
-                            <br>
-                            <b>forEach()</b> method calls a function for each element in an array. 
-                            <br>
-                            <b>filter()</b> method creates a new array filled with elements that pass a test provided by a function.
-                            <br>
-                            <b>find()</b> method returns the value of the first element that passes a test.
+                            The event loop is a constantly running process that monitors both the callback queue and the call stack.
+
+                            If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack. If the callback queue is empty, nothing will happen:
+
+                            In this example, the timeout is 0 second, so the message 'Execute immediately.' should appear before the message 'Bye!'. However, it doesn’t work like that.
+
+                            The JavaScript engine places the following function call on the callback queue and executes it when the call stack is empty. In other words, the JavaScript engine executes it after the console.log('Bye!').
                         </p>
                     </div>
                 </div>
@@ -109,13 +114,17 @@
                 <h2 class="accordion-header" id="flush-headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        What is Template String and When we use it?
+                        How undefined can you get?
                     </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                     data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>Template strings are a powerful feature of modern JavaScript released in ES6.. It allows us to create strings that are complex and contain dynamic elements.</p>
+                        <p>An undefined variable or anything without a value will always return "undefined" in JavaScript. This is not the same as null, despite the fact that both imply an empty state.
+
+                        You'll typically assign a value to a variable after you declare it, but this is not always the case.
+                        
+                        When a variable is declared or initialized but no value is assigned to it, JavaScript automatically displays "undefined".</p>
                     </div>
                 </div>
             </div>
